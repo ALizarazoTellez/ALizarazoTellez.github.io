@@ -1,0 +1,35 @@
+@keyframes swipe-up {
+  from {
+    height: 0;
+    opacity: 0;
+
+  }
+
+  to {
+    height: 128px;
+    opacity: 1;
+  }
+}
+
+@keyframes color-up {
+
+  0%,
+  50% {
+    color: transparent;
+
+  }
+
+  100% {
+    color: var(--color-text);
+  }
+}
+
+@keyframes wide {
+  from {
+    width: 128px;
+  }
+
+  to {
+    width: 32px;
+  }
+}
