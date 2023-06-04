@@ -117,7 +117,9 @@ header.banner {
 
 nav.navbar {
   position: fixed;
-  top: 0;
+
+  /* Start with the Navbar hidden. */
+  top: -64px;
   left: 0;
 
   display: flex;
@@ -129,16 +131,28 @@ nav.navbar {
   height: 64px;
   padding: 24px;
 
-  visibility: hidden;
   background-color: var(--color-mantle);
+
+  transition: top .5s ease-in-out 0s;
 }
 
-.navbar h3 {
+.navbar h3,
+.navbar i {
   background-color: inherit;
 }
 
 .navbar i {
-  --ggs: 2;
+  --ggs: 1.5;
+}
+
+.navbar i[class*="sun"] {
+  --ggs: 1.2;
+}
+
+.navbar h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 /* aside */
