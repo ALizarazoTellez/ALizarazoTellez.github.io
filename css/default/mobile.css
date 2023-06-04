@@ -1,3 +1,8 @@
+/* CSS Mobile First. */
+
+
+/* General. */
+
 * {
   user-select: none;
   margin: 0;
@@ -11,6 +16,11 @@ body {
   width: 100%;
   height: 100%;
 }
+
+
+/* Header. */
+
+/* Banner. */
 
 header.banner {
   display: flex;
@@ -28,7 +38,6 @@ header.banner {
   text-align: center;
   background-color: transparent;
 }
-
 
 .banner h1 {
   overflow-y: hidden;
@@ -61,6 +70,8 @@ header.banner {
   animation-duration: 1.5s;
 }
 
+/* Social. */
+
 .banner div.social {
   display: flex;
   flex-flow: row wrap;
@@ -78,16 +89,59 @@ header.banner {
   background-color: inherit;
 }
 
+/* Social Icons. */
+
 .banner div.social a i {
-  /* Icons. */
+  /* Icons General Sizes. */
   font-size: 32px;
+  line-height: 32px;
+
   background-color: inherit;
+
   animation-name: color-up;
   animation-duration: 2s;
 }
 
-.banner div.social a:last-child i {
+.banner div.social a[href*="linkedin"] i {
+  /* LinkedIn Icon. */
+  font-size: 30px;
+}
+
+.banner div.social a[href*="twitter"] i {
   /* Twitter Icon. */
   font-size: 26px;
-  line-height: 32px;
+}
+
+
+/* Navigation Bar. */
+
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 64px;
+  padding: 24px;
+
+  visibility: hidden;
+  background-color: var(--color-mantle);
+}
+
+.navbar h3 {
+  background-color: inherit;
+}
+
+.navbar i {
+  --ggs: 2;
+}
+
+/* aside */
+aside {
+  display: none;
 }
