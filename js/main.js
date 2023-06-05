@@ -3,6 +3,7 @@
 // Elements.
 let elem = {
     "banner": document.querySelector(".banner"),
+    "social": document.querySelector(".social"),
     "navbar": document.querySelector(".navbar"),
     "menu": document.querySelector("#menu"),
     "aside": document.querySelector(".aside"),
@@ -16,7 +17,8 @@ function main() {
 
 function handleScrollEvent() {
     // Show Navbar or hide this.
-    if (window.pageYOffset > elem.banner.getBoundingClientRect().height) {
+    let offset = elem.social.getBoundingClientRect().y + elem.social.getBoundingClientRect().height;
+    if (window.pageYOffset > offset) {
         elem.navbar.classList.add("active");
     } else {
         elem.navbar.classList.remove("active");

@@ -166,7 +166,9 @@ nav.navbar {
   letter-spacing: 2px;
 }
 
-/* aside */
+
+/* Aside. */
+
 aside.aside {
   position: fixed;
   top: calc(-1 * (100% - 64px));
@@ -227,4 +229,90 @@ aside.aside {
 
 .aside.active ul li.active::after {
   background-color: var(--color-lavender);
+}
+
+
+/* Main. */
+main.content,
+section {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  gap: 48px;
+}
+
+.content section h4 {
+  margin-bottom: 18px;
+
+  font-size: var(--font-size-larger);
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.content section::after {
+  content: '';
+
+  display: block;
+
+  width: 77vw;
+  height: 7px;
+  margin-top: 48px;
+
+  border-radius: 6px;
+}
+
+/* Home. */
+
+
+.home::after {
+  background-color: var(--color-sapphire);
+}
+
+.home img {
+  width: calc(100% - 128px);
+}
+
+.home p {
+  padding: 32px 64px;
+  text-align: center;
+}
+
+.about::after {
+  background-color: var(--color-sky);
+}
+
+.knowledge ul {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 64px;
+  align-items: center;
+  justify-content: center;
+
+  padding: 64px;
+
+  list-style: none;
+}
+
+.knowledge ul li a {
+  text-decoration: none;
+}
+
+.knowledge ul li a i {
+  font-size: 64px;
+}
+
+.knowledge::after {
+  background-color: var(--color-teal);
+}
+
+footer.footer {
+  display: grid;
+  place-items: center;
+  height: 50vh;
+  background: linear-gradient(var(--color-base) 32%, var(--color-crust));
 }
