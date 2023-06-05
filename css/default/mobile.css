@@ -134,7 +134,7 @@ nav.navbar {
 
   background-color: var(--color-mantle);
 
-  transition: top .5s ease-in-out 0s;
+  transition: top .7s ease-in-out 0s;
 }
 
 .navbar.active {
@@ -180,7 +180,7 @@ aside.aside {
   background-color: var(--color-mantle);
   border-bottom: var(--color-mantle) solid 0;
 
-  transition: all .5s ease-in-out 0s;
+  transition: all .7s ease-in-out 0s;
 }
 
 .aside.active {
@@ -192,7 +192,7 @@ aside.aside {
 .aside ul li {
   color: var(--color-mantle);
   background-color: inherit;
-  transition: color .5s ease-in-out 0s;
+  transition: color .7s ease-in-out 0s;
 }
 
 .aside ul {
@@ -224,7 +224,7 @@ aside.aside {
   border: none;
   border-radius: 7px;
 
-  transition: background-color .5s ease-in-out 0s;
+  transition: background-color .7s ease-in-out 0s;
 }
 
 .aside.active ul li.active::after {
@@ -286,6 +286,11 @@ section {
   background-color: var(--color-sky);
 }
 
+.knowledge p {
+  padding: 0 24px;
+  text-align: center;
+}
+
 .knowledge ul {
   display: flex;
   flex-flow: row wrap;
@@ -293,17 +298,62 @@ section {
   align-items: center;
   justify-content: center;
 
-  padding: 64px;
+  padding: 64px 64px 28px;
 
   list-style: none;
 }
 
+.knowledge ul li {
+  display: block;
+  padding: 14px;
+  background-color: var(--color-surface0);
+  border-radius: 7px;
+}
+
 .knowledge ul li a {
   text-decoration: none;
+  background-color: inherit;
 }
 
 .knowledge ul li a i {
-  font-size: 64px;
+  font-size: 48px;
+  background-color: inherit;
+}
+
+.knowledge ul i[class*="go"] {
+  color: var(--color-sapphire);
+}
+
+.knowledge ul i[class*="python"] {
+  color: var(--color-flamingo);
+}
+
+.knowledge ul i[class*="javascript"] {
+  color: var(--color-yellow);
+}
+
+.knowledge ul i[class*="mysql"] {
+  color: var(--color-peach);
+}
+
+.knowledge ul i[class*="css"] {
+  color: var(--color-blue);
+}
+
+.knowledge ul i[class*="html"] {
+  color: var(--color-peach);
+}
+
+.knowledge ul i[class*="git"] {
+  color: var(--color-red);
+}
+
+.knowledge ul i[class*="linux"] {
+  color: var(--color-rosewater);
+}
+
+.knowledge ul i[class*="vim"] {
+  color: var(--color-green);
 }
 
 .knowledge::after {
