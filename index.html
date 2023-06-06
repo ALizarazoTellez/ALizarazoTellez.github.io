@@ -19,6 +19,7 @@
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 
   <link rel="stylesheet" href="css/main.css">
+  <link id="theme" rel="stylesheet" href="css/themes/catppuccin/mocha.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
   <!-- JSDelivr -->
@@ -49,31 +50,42 @@
   <!-- Navbar. -->
   <nav class="navbar">
     <i id="menu" class="gg-menu-left-alt"></i>
-    <h3 class="zone">Perfil</h3>
-    <i class="gg-sun"></i>
+    <h3 id="zone">Perfil</h3>
+    <i id="themeToggle" class="gg-sun"></i>
   </nav>
 
   <!-- Aside. -->
   <aside class="aside">
     <ul>
-      <li class="active">Inicio</li>
-      <li>Sobre Mi</li>
-      <li>Conocimientos</li>
-      <li>Educación</li>
+      <li>
+        <a href="#home">Inicio</a>
+      </li>
+      <li>
+        <a href="#about">Sobre Mi</a>
+      </li>
+      <li>
+        <a href="#knowledge">Conocimientos</a>
+      </li>
+      <li>
+        <a href="#education">Educación</a>
+      </li>
     </ul>
   </aside>
 
   <!-- Main Content. -->
   <main class="content">
     <section class="home">
+      <span id="home">Inicio</span>
       <img src="img/favicon.svg" alt="Foto de Perfil">
       <p>Soy un estudiante de Ingeniería de Sistemas apasionado por la Tecnología y la Innovación, con experiencia en Programación y Diseño Web.</p>
     </section>
     <section class="about">
+      <span id="about">Sobre Mi</span>
       <h4> Sobre Mi </h4>
-      En construcción...
+      <p>En construcción...</p>
     </section>
     <section class="knowledge">
+      <span id="knowledge"> Conocimientos</span>
       <h4> Conocimientos </h4>
       <p>Tengo conocimientos en las siguientes tecnologías usadas para el desarrollo:</p>
       <ul>
@@ -99,6 +111,9 @@
         <li><a href="https://neovim.io/" target="_blank">
             <i class="devicon-vim-plain"></i> </a></li>
       </ul>
+    </section>
+    <section class="education">
+      <span id="education"> Educación </span>
     </section>
   </main>
 
