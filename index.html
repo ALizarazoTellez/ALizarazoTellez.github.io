@@ -1,125 +1,199 @@
 <!DOCTYPE html>
-<html lang="es">
+
+<html lang="es-CO">
 
 <head>
+  <!-- Encoding. -->
   <meta charset="UTF-8">
+
   <title>Anderson Lizarazo Tellez</title>
 
+  <!-- Page Information. -->
+  <meta name="description" content="Perfil de Programador de Anderson Lizarazo Tellez.">
+  <meta name="keywords" content="curriculum,vitae,anderson,lizarazo,tellez,perfil,desarrollador,programador">
+  <meta name="author" content="Anderson Lizarazo Tellez">
+  <meta name="copyright" content="Copyright (C) 2023, Anderson Lizarazo Tellez">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- TODO: Remove this when the page is finished. -->
+  <!-- This prevents page caching by browsers. -->
+  <meta http-equiv="cache-control" content="no-cache" />
 
-  <!-- OpenGraph Data. -->
-  <meta property="og:description" content="Anderson Lizarazo Tellez. Ingeniero de Sistemas.">
+  <!-- OpenGraph Data (Mostly in Social Networks).-->
+  <meta property="og:description" content="¡Hola!, Soy Anderson Lizarazo Tellez, un Estudiante de Ingeniería de Sistemas y Entusiasta de la Tecnología.">
   <meta property="og:locale" content="es_CO">
-  <meta property="og:title" content="Curriculum Vitae">
+  <meta property="og:title" content="Anderson (Systems Engineer)">
   <meta property="og:type" content="profile">
-  <meta property="og:url" content="https://alizarazot.github.io/">
+  <meta property="og:url" content="https://alizarazotellez.github.io/">
+  <!-- TODO: Change this temporary image. -->
   <meta property="og:image" content="https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80">
 
+  <!-- Favicon (Supports Dark and Light Theme). -->
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 
-  <link rel="stylesheet" href="css/main.css">
-  <link id="theme" rel="stylesheet" href="css/themes/catppuccin/mocha.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <!-- Adjust Visualization. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
 
-  <!-- JSDelivr -->
+  <!-- TODO: Adjust this to avoid a deadlock in the main thread. -->
+  <!-- Cascading Style Sheets. -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- CSS in charge of keeping the theme light and dark. -->
+  <link id="theme" rel="stylesheet" href="css/themes/catppuccin/mocha.css">
+  <!-- TODO: Avoid CDN, move it to the local repository. -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <link href='https://cdn.jsdelivr.net/npm/css.gg/icons/all.css' rel='stylesheet'>
 
-
+  <!-- JavaScript. -->
   <script defer src="js/main.js"></script>
 </head>
 
 <body>
   <!-- Header. -->
+  <!-- TODO: I do not remember why I created the class with that name, it should be changed to `header`. -->
   <header class="banner">
+
+    <!-- TODO: That line break in the title looks ugly, there must be a better way to do this. -->
     <h1>Anderson <br>Lizarazo Tellez</h1>
     <h2>Ingeniero de Sistemas</h2>
+
+    <!-- Social Networks. -->
     <div class="social">
-      <a href="https://github.com/ALizarazoTellez/">
+      <a href="https://github.com/ALizarazoTellez/" aria-label="Enlace a mi perfil de GitHub">
         <i class="devicon-github-original"></i>
       </a>
-      <a href="https://www.linkedin.com/in/alizarazotellez/">
+      <a href="https://www.linkedin.com/in/alizarazotellez/" aria-label="Enlace a mi perfil de LinkedIn">
         <i class="devicon-linkedin-plain"></i>
       </a>
-      <a href="https://twitter.com/ALizarazoTellez/" target="_blank">
+      <a href="https://twitter.com/ALizarazoTellez/" target="_blank" aria-label="Enlace a mi perfil de Twitter">
         <i class="devicon-twitter-original"></i>
       </a>
     </div>
+
   </header>
 
   <!-- Navbar. -->
   <nav class="navbar">
+
     <i id="menu" class="gg-menu-left-alt"></i>
+
+    <!-- TODO: I believe that the name of this identifier does not sufficiently describe its purpose. -->
     <h3 id="zone">Perfil</h3>
+
     <i id="themeToggle" class="gg-sun"></i>
+
   </nav>
 
   <!-- Aside. -->
   <aside class="aside">
+
+    <!-- Links to useful parts of the site. -->
     <ul>
       <li>
         <a href="#home">Inicio</a>
       </li>
+
       <li>
         <a href="#about">Sobre Mi</a>
       </li>
+
       <li>
         <a href="#knowledge">Conocimientos</a>
       </li>
+
       <li>
         <a href="#education">Educación</a>
       </li>
     </ul>
+
   </aside>
 
   <!-- Main Content. -->
+  <!-- TODO: Although this class name does reflect its purpose, it would be better to change it to `main` to maintain
+	  consistency with the other class names. -->
   <main class="content">
+
+    <!-- TODO(refactor-links): Although during the time of coding, using `span` tags as the targets of the links
+	    to the different sections of the page was useful, now this looks ugly, I must think of another solution.
+    -->
+
+    <!-- Home section, this section contains a photo of me and a short biography about me. -->
     <section class="home">
+
+      <!-- TODO: refactor-links -->
       <span id="home">Inicio</span>
+
       <img src="img/favicon.svg" alt="Foto de Perfil">
-      <p>Soy un estudiante de Ingeniería de Sistemas apasionado por la Tecnología y la Innovación, con experiencia en Programación y Diseño Web.</p>
+      <p>Soy un estudiante de Ingeniería de Sistemas apasionado por la Tecnología y la Innovación, con experiencia en
+        Programación y Diseño Web.</p>
+
     </section>
+
+    <!-- About section, this section describes my professional profile and provides a link to my resume. -->
     <section class="about">
+
+      <!-- TODO: refactor-links -->
       <span id="about">Sobre Mi</span>
+
       <h4> Sobre Mi </h4>
       <p>En construcción...</p>
+
     </section>
+
+    <!-- Knowledge section, this section contains all my knowledge, including what I learned self-taught. -->
     <section class="knowledge">
+
+      <!-- TODO: refactor-links -->
       <span id="knowledge"> Conocimientos</span>
+
       <h4> Conocimientos </h4>
       <p>Tengo conocimientos en las siguientes tecnologías usadas para el desarrollo:</p>
+
       <ul>
-        <li><a href="https://go.dev/" target="_blank">
+        <li><a href="https://go.dev/" target="_blank" aria-label="Enlace a la Página del Lenguaje de Programación Go">
             <i class="devicon-go-original-wordmark"></i></a></li>
-        <li><a href="https://www.python.org/" target="_blank">
+
+        <li><a href="https://www.python.org/" target="_blank" aria-label="Enlace a la Página del Lenguaje de Programación Python">
             <i class="devicon-python-plain"></i></a></li>
-        <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/JavaScript" target="_blank">
+
+        <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/JavaScript" target="_blank" aria-label="Enlace a la Página de MDN acerca de JavaScript">
             <i class="devicon-javascript-plain"></i></a></li>
 
-        <li><a href="https://www.mysql.com/" target="_blank">
+        <li><a href="https://www.mysql.com/" target="_blank" aria-label="Enlace a la Página del Motor de Bases de Datos MySql">
             <i class="devicon-mysql-plain"></i></a></li>
-        <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML" target="_blank">
+
+        <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML" target="_blank" aria-label="Enlace a la Página de MDN acerca de HTML">
             <i class="devicon-html5-plain"></i> </a></li>
-        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" aria-label="Enlace a la Página de MDN acerca de CSS">
             <i class="devicon-css3-plain"></i> </a></li>
 
-        <li><a href="https://git-scm.com/" target="_blank">
+        <li><a href="https://git-scm.com/" target="_blank" aria-label="Enlace a la Página del Sistema de Control de Versiones GIT">
             <i class="devicon-git-plain"></i> </a></li>
-        <li><a href="https://archlinux.org/" target="_blank">
+
+        <li><a href="https://archlinux.org/" target="_blank" aria-label="Enlace a la Página del Sistema Operativo Arch Linux">
             <i class="devicon-linux-plain"></i> </a></li>
 
-        <li><a href="https://neovim.io/" target="_blank">
+        <li><a href="https://neovim.io/" target="_blank" aria-label="Enlace a la Página del Editor de Texto Neovim">
             <i class="devicon-vim-plain"></i> </a></li>
       </ul>
+
     </section>
+
+    <!-- Education section, in this section are all the certificates I have obtained. -->
     <section class="education">
+
+      <!-- TODO: refactor-links -->
       <span id="education"> Educación </span>
+
     </section>
+
   </main>
 
   <!-- Footer. -->
   <footer class="footer">
+
+    <!-- TODO: Start building this section. -->
     <h3>Anderson Lizarazo Tellez</h3>
+
   </footer>
 
 </body>

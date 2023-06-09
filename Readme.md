@@ -15,4 +15,4 @@ This is my resume page, it's not finished yet, but if you still want to see its 
   - [ ] Tablets.
   - [ ] Computers.
 - [ ] Improve performance.
-
+- [ ] Remove "TODO"s.
