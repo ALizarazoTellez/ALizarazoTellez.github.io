@@ -1,0 +1,11 @@
+#! Git Ignore.
+
+# Node.js
+node_modules/
+# I don't have much experience with Node.js, so until I document myself well, I
+# won't upload these files.
+package.json
+package-lock.json
+
+# Content still to be reviewed.
+others/
