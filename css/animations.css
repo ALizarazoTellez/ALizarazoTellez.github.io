@@ -1,12 +1,17 @@
+/* CSS. */
+
 @keyframes swipe-up {
-   from {
-      height: 0;
+   0% {
+      transform: translateY(30%);
       opacity: 0;
 
    }
 
-   to {
-      height: 128px;
+   20% {
+      opacity: 0;
+   }
+
+   100% {
       opacity: 1;
    }
 }

@@ -1,4 +1,8 @@
-/* CSS Mobile First. */
+/* CSS. */
+
+/* This file contains the main styles. */
+
+/* This file is prepared for screens smaller than 600 pixels (phones). */
 
 
 /* General. */
@@ -8,6 +12,7 @@
    margin: 0;
    padding: 0;
 
+   /* Eliminate the annoying blue box when a button is touched from the phone. */
    -webkit-tap-highlight-color: transparent;
 }
 
@@ -20,26 +25,25 @@ body {
 
 /* Header. */
 
-/* Banner. */
-
-header.banner {
+.header {
    display: flex;
    flex-flow: column nowrap;
    align-items: center;
    justify-content: center;
 
+   /* The header must occupy the entire screen. */
    height: 100%;
 
-   background: linear-gradient(var(--color-crust) 48%, var(--color-base));
+   background: linear-gradient(var(--color-crust) 45%, var(--color-base));
 }
 
-.banner h1,
-.banner h2 {
+.header h1,
+.header h2 {
    text-align: center;
    background-color: transparent;
 }
 
-.banner h1 {
+.header h1 {
    overflow-y: hidden;
 
    font-size: 48px;
@@ -50,12 +54,12 @@ header.banner {
    animation-duration: 1.5s;
 }
 
-.banner h2 {
+.header h2 {
    margin: 14px auto 28%;
    line-height: 32px;
 }
 
-.banner h2::after {
+.header h2::after {
    content: '';
 
    display: block;
@@ -72,7 +76,7 @@ header.banner {
 
 /* Social. */
 
-.banner div.social {
+.header div.social {
    display: flex;
    flex-flow: row wrap;
    gap: 14px;
@@ -84,14 +88,14 @@ header.banner {
    background-color: transparent;
 }
 
-.banner div.social a {
+.header div.social a {
    text-decoration: none;
    background-color: inherit;
 }
 
 /* Social Icons. */
 
-.banner div.social a i {
+.header div.social a i {
    /* Icons General Sizes. */
    font-size: 32px;
    line-height: 32px;
@@ -102,12 +106,12 @@ header.banner {
    animation-duration: 2s;
 }
 
-.banner div.social a[href*="linkedin"] i {
+.header div.social a[href*="linkedin"] i {
    /* LinkedIn Icon. */
    font-size: 30px;
 }
 
-.banner div.social a[href*="twitter"] i {
+.header div.social a[href*="twitter"] i {
    /* Twitter Icon. */
    font-size: 26px;
 }
