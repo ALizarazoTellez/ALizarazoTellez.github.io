@@ -1,1 +1,56 @@
-@import url("default/main.css");
+/* CSS. */
+
+/* My style sheets. */
+@import url('style.css');
+
+/* All styles, using the "Mobile-First" strategy. */
+@import url('animations.css');
+
+/* Style sheets not created by me (they are known to be heavy). */
+@import url('extras.css');
+
+
+/* Media Queries. */
+
+/* TODO: Make the page Responsive. */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+/* @import 'style-600px.css' only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+/* @import 'style-768px.css' only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+/* @import 'style-992px.css' only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+/* @import 'style-1200px.css' only screen and (min-width: 1200px) {...} */
+
+
+/* Make arrangements for the other CSS. */
+
+/* Some useful variables. */
+:root {
+   --font-size-small: 14px;
+   --font-size-regular: 18px;
+   --font-size-big: 20px;
+   --font-size-larger: 24px;
+}
+
+/* Use a more intuitive measurement mode. */
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+/* Some default settings. */
+* {
+   font-family: Quicksand, sans-serif;
+   font-size: var(--font-size-regular);
+   font-weight: 600;
+}

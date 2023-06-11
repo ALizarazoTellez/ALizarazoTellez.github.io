@@ -36,8 +36,8 @@ let lastHight = elem.aside;
 function toggleTheme() {
    let theme = document.querySelector("#theme");
 
-   const dark = "css/themes/catppuccin/mocha.css";
-   const light = "css/themes/catppuccin/latte.css";
+   const dark = "css/themes/dark.css";
+   const light = "css/themes/light.css";
 
    if (theme.getAttribute("href") == dark) {
       theme.setAttribute("href", light)
