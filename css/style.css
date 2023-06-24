@@ -252,7 +252,7 @@ aside.aside {
 
 
 /* Main. */
-main.content,
+main.main,
 section {
    display: flex;
    flex-flow: column nowrap;
@@ -260,11 +260,11 @@ section {
    justify-content: center;
 }
 
-.content {
+.main {
    gap: 48px;
 }
 
-.content section h4 {
+.main section h4 {
    margin-bottom: 18px;
 
    font-size: var(--font-size-larger);
@@ -273,7 +273,7 @@ section {
    letter-spacing: 2px;
 }
 
-.content section::after {
+.main section::after {
    content: '';
 
    display: block;
@@ -285,7 +285,7 @@ section {
    border-radius: 6px;
 }
 
-.content section span:first-child {
+.main section span:first-child {
    position: relative;
    top: -82px;
    overflow: hidden;
