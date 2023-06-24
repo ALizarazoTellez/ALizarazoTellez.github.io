@@ -23,8 +23,7 @@
 /* @import 'style-768px.css' only screen and (min-width: 768px) {...} */
 
 /* Large devices (laptops/desktops, 992px and up) */
-
-/* @import 'style-992px.css' only screen and (min-width: 992px) {...} */
+@import url('style-992px.css') only screen and (min-width: 992px);
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
