@@ -386,6 +386,47 @@ section {
    background-color: var(--color-teal);
 }
 
+.education p {
+   padding: 0 24px;
+   text-align: center;
+}
+
+.education ul {
+   display: flex;
+   flex-flow: row wrap;
+   gap: 32px;
+   align-content: center;
+   align-items: stretch;
+   justify-content: center;
+
+   padding: 64px 64px 28px;
+
+   list-style: none;
+}
+
+.education ul li {
+   display: block;
+
+   width: 100%;
+   padding: 21px;
+
+   background-color: var(--color-surface0);
+   border-radius: 7px;
+}
+
+.education ul li img {
+   width: 100%;
+   border-radius: 7px;
+}
+
+.education ul li h5,
+.education ul li p {
+   margin-top: 14px;
+   font-weight: bold;
+   text-align: center;
+   background-color: inherit;
+}
+
 footer.footer {
    display: grid;
    place-items: center;

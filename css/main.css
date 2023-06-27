@@ -15,8 +15,7 @@
 /* TODO: Make the page Responsive. */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-
-/* @import 'style-600px.css' only screen and (min-width: 600px) {...} */
+@import url('style-600px.css') only screen and (min-width: 600px);
 
 /* Medium devices (landscape tablets, 768px and up) */
 
